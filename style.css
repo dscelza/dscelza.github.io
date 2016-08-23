@@ -54,8 +54,11 @@ body {
 }
 
 .blue-bg {
-    background: rgba(34,125,170,1);
-    background-color: rgba(34,125,170,1);
+    background: rgba(34,125,170,1); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(34,125,170,1), rgba(81,172,205,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(34,125,170,1), rgba(81,172,205,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(34,125,170,1), rgba(81,172,205,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(34,125,170,1), rgba(81,172,205,1)); /* Standard syntax */
 }
 
 .blue-bg timeline{
@@ -64,4 +67,20 @@ body {
 
 .blue-bg h2{
     font-size: 24px;
+}
+
+#main-section {
+    height: 100vh;
+}
+
+.box {
+  border: 1px solid #89bbd3;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #e1e1e1;
+    padding-top:10px;
 }
