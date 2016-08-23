@@ -1,4 +1,5 @@
 
+
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -33,11 +34,15 @@ body {
 
 }
 
-.blue-bg div {
+.white-bg h2{
+    font-size: 24px;
+}
+
+.blue-bg div,  {
     color: #aaa;
 }
 
-.blue-bg h1, .blue-bg h2 {
+.blue-bg h1, .blue-bg h2, .blue-bg ul, .blue-bg .small {
     color: white;   
 }
 
@@ -77,6 +82,7 @@ body {
   border: 1px solid #89bbd3;
   border-radius: 10px;
   padding: 20px;
+  padding-top: 0px;
   margin-bottom: 20px;
 }
 
