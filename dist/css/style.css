@@ -1,8 +1,34 @@
 
-
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
+}
+
+#main-section {
+    height: 100vh;
+}
+
+.box {
+  border: 1px solid #89bbd3;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 0px;
+  margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #e1e1e1;
+    padding-top:10px;
+}
+
+.box a {
+    text-decoration: none !important;
+    font-size: 24px;
+}
+
+.box span {
+    color: #3295be;
+    font-size: 18px;
 }
 
 .section h1 {
@@ -22,8 +48,16 @@ body {
     color: #3295be;   
 }
 
+.white-bg h2{
+    font-size: 24px;
+}
+
 .white-bg p {
     color: #58798c;
+}
+
+.white-bg a {
+    color: black;
 }
 
 .white-bg hr {
@@ -31,30 +65,6 @@ body {
     height: 5px;
     color: #3295be;
     background-color: #3295be;
-
-}
-
-.white-bg h2{
-    font-size: 24px;
-}
-
-.blue-bg div,  {
-    color: #aaa;
-}
-
-.blue-bg h1, .blue-bg h2, .blue-bg ul, .blue-bg .small {
-    color: white;   
-}
-
-.blue-bg p {
-    color: #deeef5;
-}
-
-.blue-bg hr {
-    border: none;
-    height: 5px;
-    color: white;
-    background-color: white;
 
 }
 
@@ -66,27 +76,31 @@ body {
     background: linear-gradient(rgba(34,125,170,1), rgba(81,172,205,1)); /* Standard syntax */
 }
 
-.blue-bg timeline{
-    font-size: 24px;
+.blue-bg h1, .blue-bg h2, .blue-bg ul, .blue-bg .small {
+    color: white;   
 }
 
 .blue-bg h2{
     font-size: 24px;
 }
 
-#main-section {
-    height: 100vh;
+.blue-bg p, .blue-bg span{
+    color: #deeef5;
 }
 
-.box {
-  border: 1px solid #89bbd3;
-  border-radius: 10px;
-  padding: 20px;
-  padding-top: 0px;
-  margin-bottom: 20px;
+.blue-bg a {
+    color: white;
 }
 
-.footer {
-    background-color: #e1e1e1;
-    padding-top:10px;
+.blue-bg div,  {
+    color: #aaa;
 }
+
+.blue-bg hr {
+    border: none;
+    height: 5px;
+    color: white;
+    background-color: white;
+
+}
+
