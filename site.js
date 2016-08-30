@@ -17,7 +17,8 @@
     //Launches modal containing clicked image
     function load_image_modal(clickedImg){
         var modalImg = document.getElementById("modal-screenshot-image");
-        modalImg.src = clickedImg.src;
+        modalImg.src = clickedImg.src.slice(0, clickedImg.src.length - 4) + "_lg.png";
+        console.log(clickedImg.src.slice(0, clickedImg.src.length - 4) + "_lg.png");
         if (clickedImg.height > clickedImg.width) //Adjust for Phone Screenshots vs Desktop
             modalImg.style = "height: 80%; height: 80vh; width: auto;"
         else
