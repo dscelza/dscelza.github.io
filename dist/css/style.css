@@ -4,7 +4,7 @@ body {
   margin: 0;
 }
 
-#main-section, #main-section .container-fluid {
+#main-section, #main-section .row {
     height: 100%; /*For browsers that do NOT support vh*/
     height: 100vh;
     
