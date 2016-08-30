@@ -4,7 +4,8 @@ body {
   margin: 0;
 }
 
-#main-section {
+#main-section, #main-section .container-fluid {
+    height: 100%; /*For browser that do NOT support vh*/
     height: 100vh;
 }
 
@@ -31,6 +32,11 @@ body {
     font-size: 18px;
 }
 
+.title-span {
+    font-size:48px; 
+    padding-bottom: 12px;
+}
+
 .section h1 {
   margin: 0;
   text-transform: uppercase;
@@ -52,7 +58,7 @@ body {
     font-size: 24px;
 }
 
-.white-bg p {
+.white-bg p, .white-bg .title-span {
     color: #58798c;
 }
 
@@ -69,11 +75,11 @@ body {
 }
 
 .blue-bg {
-    background: rgba(34,125,170,1); /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgba(34,125,170,1), rgba(81,172,205,1)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(34,125,170,1), rgba(81,172,205,1)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(34,125,170,1), rgba(81,172,205,1)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(34,125,170,1), rgba(81,172,205,1)); /* Standard syntax */
+    background: #4194CA; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#4194CA, #59BAE6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4194CA, #59BAE6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4194CA, #59BAE6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4194CA, #59BAE6); /* Standard syntax */
 }
 
 .blue-bg h1, .blue-bg h2, .blue-bg ul, .blue-bg .small {
@@ -103,4 +109,5 @@ body {
     background-color: white;
 
 }
+
 
