@@ -7,7 +7,18 @@ body {
 #main-section, #main-section .container-fluid {
     height: 100%; /*For browser that do NOT support vh*/
     height: 100vh;
+    
 }
+
+#main-section .container-fluid {
+    line-height: 100vh;
+    background-color: darkcyan;
+}
+
+/*#main-section .container-fluid h2{
+    vertical-align: middle;
+    display: inline-block;
+}*/
 
 .box {
   border: 1px solid #89bbd3;
