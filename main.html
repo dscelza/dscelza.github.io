@@ -245,26 +245,20 @@
                 </div>
                 <div class="col-md-8 col-xs-12">
                     <div>      
-                        <button type="button" class="btn btn-primary" style="margin-right:20px">
+                        <button type="button" class="btn btn-primary" onclick="linkedin_btn_click();" style="margin-right:20px">
                             <i class="fa fa-linkedin" aria-hidden="true" style="font-size: 36pt;"></i>
                         </button>
-                        <button type="button" class="btn btn-primary">
+                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#emailDiv"  onclick="email_btn_click();" >
                             <i class="fa fa-envelope" aria-hidden="true" style="font-size: 36pt;"></i>
                         </button>
+                    </div>
+                    <div class="collapse" id="emailDiv" style="padding-top:20px">
+                        <div class="well" id="emailContent">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!--<section style="padding:35px;">
-            <div class="container">
-            <h3 id="contact-header">Contact</h3>
-            <p>Email</p>
-            <a href="https://www.linkedin.com/in/dylanscelza">
-                <img src="In-2C-59px-R.png"/>
-            </a>
-            </div>
-        </section>-->
 
         <footer class="footer">
             <div class="container">
@@ -273,7 +267,7 @@
         </footer>
     
 </body>
-<script>
+<script src="site.js">
 </script>
 </body>
 </html>
