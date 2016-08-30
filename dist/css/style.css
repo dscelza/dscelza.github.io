@@ -10,13 +10,13 @@ body {
     
 }
 
-#main-section .title-text{
+#main-section .title-text{ /*Vertical center-align header content*/
   position: relative;
   top: 30%;
   transform: perspective(1px) translateY(-30%);
 }
 
-.box {
+.box { /*Box border style*/
   border: 1px solid #89bbd3;
   border-radius: 10px;
   padding: 20px;
@@ -37,11 +37,6 @@ body {
 .box span {
     color: #3295be;
     font-size: 18px;
-}
-
-.title-span {
-    font-size:48px; 
-    padding-bottom: 12px;
 }
 
 .section h1 {

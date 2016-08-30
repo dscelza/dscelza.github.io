@@ -12,6 +12,5 @@
         var thirdPhrase = "@umich.edu";
         
         document.getElementById("emailContent").innerHTML = "Email: " + firstPhrase + secondPhrase + thirdPhrase;
-        console.log(document.getElementById("emailContent").innerHTML);
     }
 -->
