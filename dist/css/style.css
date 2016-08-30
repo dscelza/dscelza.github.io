@@ -9,12 +9,6 @@ body {
     height: 100vh;   
 }
 
-#modal-screenshot-image {
-    height: 80%; /*For browsers that do NOT support vh*/
-    height: 80vh;   
-    width: auto;
-}
-
 #main-section .title-text{ /*Vertical center-align header content*/
   position: relative;
   top: 30%;
