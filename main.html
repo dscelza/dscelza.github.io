@@ -247,13 +247,13 @@
                                 </p>
                                 <div class="row text-center" style="padding:0px;">
                                     <div class="col-xs-4">
-                                        <img class="img-responsive img-thumbnail" src="images/MCH_Screenshot_Main.png" alt="MC Helper screenshot img main" width="150">
+                                        <img class="img-responsive img-thumbnail" src="images/MCH_Screenshot_Main.png" alt="MC Helper screenshot img main" width="150" onclick="load_image_modal(this);" >
                                     </div> 
                                     <div class="col-xs-4">
-                                        <img class="img-responsive img-thumbnail" src="images/MCH_Screenshot_Torches.png" alt="MC Helper screenshot img torches" width="150">
+                                        <img class="img-responsive img-thumbnail" src="images/MCH_Screenshot_Torches.png" alt="MC Helper screenshot img torches" width="150" onclick="load_image_modal(this);">
                                     </div> 
                                     <div class="col-xs-4">
-                                        <img class="img-responsive img-thumbnail" src="images/MCH_Screenshot_CraftingList.png" alt="MC Helper screenshot img crafting list" width="150">
+                                        <img class="img-responsive img-thumbnail" src="images/MCH_Screenshot_CraftingList.png" alt="MC Helper screenshot img crafting list" width="150" onclick="load_image_modal(this);">
                                     </div>  
                                 </ul>
                             </div>
@@ -270,10 +270,10 @@
                                 </p>
                                 <div class="row text-center" style="padding:0px;">
                                     <div class="col-xs-4">
-                                        <img class="img-responsive img-thumbnail" src="images/PR_Screenshot_Phone.png" alt="Paradise Rewards screenshot img phone" width="150">
+                                        <img class="img-responsive img-thumbnail" src="images/PR_Screenshot_Phone.png" alt="Paradise Rewards screenshot img phone" width="150" onclick="load_image_modal(this);">
                                     </div> 
                                     <div class="col-xs-8">
-                                        <img class="img-responsive img-thumbnail" src="images/PR_Screenshot_Desktop.png" alt="Paradise Rewards screenshot img desktop" height="250">
+                                        <img class="img-responsive img-thumbnail" src="images/PR_Screenshot_Desktop.png" alt="Paradise Rewards screenshot img desktop" height="250" onclick="load_image_modal(this);">
                                     </div> 
                                 </ul>
                             </div>
@@ -293,7 +293,7 @@
                                 </p>
                                 <div class="row text-center" style="padding:0px;">
                                     <div class="col-xs-12">
-                                        <img class="img-responsive img-thumbnail" src="images/WCI_Screenshot_Top.png" alt="WCI screenshot img top" height="250">
+                                        <img class="img-responsive img-thumbnail" src="images/WCI_Screenshot_Top.png" alt="WCI screenshot img top" height="250" onclick="load_image_modal(this);">
                                     </div> 
                                 </ul>
                             </div>
@@ -352,7 +352,21 @@
                 <p class="text-muted text-center">Made with ☻ in NY, USA</p>
             </div>
         </footer>
-    
+
+        <!-- Modal -->
+        <div class="modal fade" id="screenshotModal" tabindex="-1" role="dialog" aria-labelledby="screenshotModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="screenshotModalLabel">Screenshot</h4>
+            </div>
+            <div class="modal-body text-center">
+                <img id="modal-screenshot-image" class="img-responsive img-thumbnail" >
+            </div>
+            </div>
+        </div>
+        </div>
 </body>
 <script src="site.js">
 </script>
