@@ -1,6 +1,4 @@
 <!--
-    //hide navbar onpage load
-    $("#navbar-main").hide();
 
     //Linked In contact btn click
     function linkedin_btn_click(){
@@ -29,10 +27,15 @@
 
     //Fades in navbar on-scroll
     $(document).ready(function(){
+        //hide navbar onpage load
+        $("#navbar-main").hide();
+        $("#navbar-main").removeClass("hidden");
         $(window).scroll(function () {
         // set distance to scroll before fadeIn navbar
-        if ($(this).scrollTop() > 25) 
+        if ($(this).scrollTop() > 25){ 
+            $("#navbar-main").show();
             $('#navbar-main').fadeIn();
+        }
         });
     });
 
