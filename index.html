@@ -21,7 +21,39 @@
     <script src="dist/bootstrap/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-main">
+
+    <nav id="navbar-main" class="navbar navbar-inverse navbar-fixed-top" style="color:#002F66;">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-left" href="#">
+                    <img src="images/D-logo_light.png" height="35" style="margin-top:8px; padding-left: 20px">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#main-section">Top</a></li>
+                    <li><a href="#summary-section">Summary</a></li>
+                    <li><a href="#education-section">Education</a></li>
+                    <li><a href="#experience-section">Experience</a></li>
+                    <li><a href="#leadership-section">Leadership</a></li>
+                    <li><a href="#projects-section">Projects</a></li>
+                    <li><a href="#skills-section">Skills</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!--HEADER SECTION-->
     <section id="main-section" class="blue-bg main-section">
@@ -38,7 +70,7 @@
     </section>
 
     <!--SUMMARY SECTION-->
-    <section class="section white-bg">
+    <section id="summary-section" class="section white-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -56,7 +88,7 @@
     </section>
 
     <!--EDUCATION SECTION-->
-    <section class="section blue-bg">
+    <section id="education-section" class="section blue-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -76,7 +108,7 @@
     </section>
 
     <!--EXPERIENCE SECTION-->
-    <section class="section white-bg">
+    <section id="experience-section" class="section white-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -167,7 +199,7 @@
     </section>
 
     <!--LEADERSHIP, INVOLVEMENT, INITIATIVE SECTION-->
-    <section class="section blue-bg">
+    <section id="leadership-section" class="section blue-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -221,7 +253,7 @@
     </section>
 
     <!--PROJECTS SECTION-->
-    <section class="section white-bg">
+    <section id="projects-section" class="section white-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -319,7 +351,7 @@
     </section>
 
     <!--SKILLS SECTION-->
-    <section class="section blue-bg">
+    <section id="skills-section" class="section blue-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -336,7 +368,7 @@
     </section>
 
     <!--CONTACT SECTION-->
-    <section class="section white-bg">
+    <section id="contact-section" class="section white-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
