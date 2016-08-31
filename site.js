@@ -1,4 +1,6 @@
 <!--
+    //hide navbar onpage load
+    $("#navbar-main").hide();
 
     //Linked In contact btn click
     function linkedin_btn_click(){
@@ -27,8 +29,6 @@
 
     //Fades in navbar on-scroll
     $(document).ready(function(){
-        //hide navbar onpage load
-        $("#navbar-main").hide();
         $(window).scroll(function () {
         // set distance to scroll before fadeIn navbar
         if ($(this).scrollTop() > 25) 
