@@ -20,9 +20,9 @@
         var modalImg = document.getElementById("modal-screenshot-image");
         modalImg.className = "img-responsive img-thumbnail hidden";
         //Displays high-res img
-        modalImg.src = clickedImg.src.slice(0, clickedImg.src.length - 4) + "_lg.png"; 
+        modalImg.src = clickedImg.src.slice(0, clickedImg.src.length - 4) + "_lg.png";
         //Adjust for Phone Screenshots vs Desktop
-        if (clickedImg.height > clickedImg.width) 
+        if (clickedImg.height > clickedImg.width)
             modalImg.style = "height: 80%; height: 80vh; width: auto;"
         else
             modalImg.style = "width: 80%; width: 80vw; height: auto;"
@@ -45,9 +45,9 @@
         $("#navbar-main").removeClass("hidden");
         $(window).scroll(function () {
         // set distance to scroll before fadeIn navbar
-        if ($(this).scrollTop() > 25){ 
+        if ($(this).scrollTop() > 25){
             $("#navbar-main").show();
-            $('#navbar-main').fadeIn();
+            $("#navbar-main").fadeIn();
         }
         });
     });
@@ -59,7 +59,7 @@
     }
 
     // Add smooth scrolling to all links inside a navbar
-    $("#navbar-main a").on('click', function(event){
+    $("#navbar-main a").on("click", function(event){
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
         // Prevent default anchor click behavior
@@ -68,7 +68,7 @@
         var hash = this.hash;
         // Using jQuery's animate() method to add smooth page scroll
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
-        $('html, body').animate({
+        $("html, body").animate({
         scrollTop: $(hash).offset().top
         }, 800, function(){
         // Add hash (#) to URL when done scrolling (default click behavior)
