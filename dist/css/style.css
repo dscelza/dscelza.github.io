@@ -4,12 +4,12 @@ body {
   margin: 0;
 }
 
-#main-section, #main-section .row {
+#main, #main .row {
     height: 100%; /*For browsers that do NOT support vh*/
     height: 100vh;   
 }
 
-#main-section .title-text{ /*Vertical center-align header content*/
+#main .title-text{ /*Vertical center-align header content*/
   position: relative;
   top: 30%;
   transform: perspective(1px) translateY(-30%);
