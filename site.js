@@ -18,7 +18,7 @@
     function load_image_modal(clickedImg){
         $("#modal-progress-bar").removeClass("hidden");
         var modalImg = document.getElementById("modal-screenshot-image");
-        modalImg.class = "img-responsive img-thumbnail hidden";
+        modalImg.className = "img-responsive img-thumbnail hidden";
         //Displays high-res img
         modalImg.src = clickedImg.src.slice(0, clickedImg.src.length - 4) + "_lg.png"; 
         //Adjust for Phone Screenshots vs Desktop
