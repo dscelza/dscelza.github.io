@@ -17,16 +17,15 @@
     //Launches modal containing clicked image
     function load_image_modal(clickedImg){
         $("#modal-progress-bar").removeClass("hidden");
-
         var modalImg = document.getElementById("modal-screenshot-image");
+        modalImg.class = "img-responsive img-thumbnail hidden";
         //Displays high-res img
         modalImg.src = clickedImg.src.slice(0, clickedImg.src.length - 4) + "_lg.png"; 
         //Adjust for Phone Screenshots vs Desktop
         if (clickedImg.height > clickedImg.width) 
             modalImg.style = "height: 80%; height: 80vh; width: auto;"
         else
-            modalImg.style = "width: 80%; width: 80vw; height:auto;"
-        modalImg.class = "img-responsive img-thumbnail hidden";
+            modalImg.style = "width: 80%; width: 80vw; height: auto;"
         //Set modal header to image alt text
         document.getElementById("screenshotModalLabel").innerHTML = clickedImg.alt;
         //Toggle modal
