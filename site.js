@@ -63,7 +63,9 @@
             $("#navbar-main").fadeOut();
         }
         });
-        // console.log($(".blue-header").data('vide'));
+        var instance = $(".blue-header").data('vide');
+        console.log(instance);
+        console.log(instance.getVideoObject());
         // Add Play/Pause for video. (Present in browser that autoplay vid)
     });
 
