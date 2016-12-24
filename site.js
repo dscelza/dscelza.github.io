@@ -10,8 +10,19 @@
         var firstPhrase = "dsc";
         var secondPhrase = "elza";
         var thirdPhrase = "@umich.edu";
-        
-        document.getElementById("emailContent").innerHTML = "Email: " + firstPhrase + secondPhrase + thirdPhrase;
+        $("#emailContent").html("Email: " + firstPhrase + secondPhrase + thirdPhrase);
+    }
+
+    //Click header chevron button. Scroll to summary section
+    function chevron_btn_click(){
+         $('html, body').animate({
+            scrollTop: $("#summary").offset().top - 50
+            }, 1000, function(){
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = "#summary";
+                } // End if statement
+            );
+    //    document.getElementById("education").scrollIntoView();
     }
 
     //Launches modal containing clicked image
@@ -27,7 +38,7 @@
         else
             modalImg.style = "width: 80%; width: 80vw; height: auto;"
         //Set modal header to image alt text
-        document.getElementById("screenshotModalLabel").innerHTML = clickedImg.alt;
+        $("#screenshotModalLabel").html(clickedImg.alt)
         //Toggle modal
         $("#screenshotModal").modal("toggle");
     }
@@ -71,7 +82,7 @@
         // Using jQuery's animate() method to add smooth page scroll
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
         $("html, body").animate({
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top - 50
         }, 800, function(){
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
