@@ -63,6 +63,8 @@
             $("#navbar-main").fadeOut();
         }
         });
+        // console.log($(".blue-header").data('vide'));
+        // Add Play/Pause for video. (Present in browser that autoplay vid)
     });
 
     //Collapse toggle button when nav item clicked
