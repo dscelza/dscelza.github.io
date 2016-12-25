@@ -64,10 +64,11 @@
         }
         });
 
-        // Add video controls if the video is loaded. 200ms delay to account for vide args
+        // EDIT TO USE VISIBILITY INSTEAD OF CURRTIME
+        // Add video controls if the video is loaded. 300ms delay to account for vide args
         setTimeout(function(){
             var instance = $('.blue-header').data('vide');
-            if (instance.getVideoObject().currentTime > 0){
+            if (instance.getVideoObject().style['visibility'] == 'visible'){
                 $("#vid-control-div").removeClass("hidden");
                 $("#vid-pause")[0].addEventListener('click', function() { 
                     instance.getVideoObject().pause(); 
@@ -81,7 +82,7 @@
                 }, false);
             }
 
-        }, 200)
+        }, 300)
 
         // var instance = $('.blue-header').data('vide');
         // console.log(instance.getVideoObject().play());

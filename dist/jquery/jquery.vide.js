@@ -295,12 +295,12 @@
     // If splashPNG enabled, swap poster to jpg version. Halt video from displaying after 200ms.
     if (splashPNG === true) {
       setTimeout(function(){
-        console.log($video[0].currentTime)
+        // console.log($video[0].currentTime)
         if ($video.css('visibility') == 'hidden'){
           $wrapper.css('background-image', 'url(' + poster + '.' + "jpg" + ')');
           splashSwapped = true;
         }
-      }, 200)
+      }, 250)
     }
     $element.prepend($wrapper);
 
