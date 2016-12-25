@@ -300,6 +300,9 @@
           $wrapper.css('background-image', 'url(' + poster + '.' + "jpg" + ')');
           splashSwapped = true;
       }
+      else{
+          $wrapper.css('background-image', 'url(' + poster + '.' + "jpeg" + ')');
+      }
       // setTimeout(function(){
         // console.log($video[0].currentTime)
       //   if ($video.css('visibility') == 'hidden'){
