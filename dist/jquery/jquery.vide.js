@@ -42,7 +42,8 @@
     posterType: 'detect',
     resizing: true,
     bgColor: 'transparent',
-    className: ''
+    className: '',
+    splashPNG: false
   };
 
   /**
@@ -235,10 +236,12 @@
     var sources = '';
     var $element = vide.$element;
     var settings = vide.settings;
+    var splashPNG = settings.splashPNG;
     var position = parsePosition(settings.position);
     var posterType = settings.posterType;
     var $video;
     var $wrapper;
+    var splashSwapped = false;
 
     // Set styles of a video wrapper
     $wrapper = vide.$wrapper = $('<div>')
@@ -289,6 +292,16 @@
       $element.css('position', 'relative');
     }
 
+    // If splashPNG enabled, swap poster to jpg version. Halt video from displaying after 200ms.
+    if (splashPNG === true) {
+      setTimeout(function(){
+        console.log($video[0].currentTime)
+        if ($video.css('visibility') == 'hidden'){
+          $wrapper.css('background-image', 'url(' + poster + '.' + "jpg" + ')');
+          splashSwapped = true;
+        }
+      }, 200)
+    }
     $element.prepend($wrapper);
 
     if (typeof path === 'object') {
@@ -351,17 +364,18 @@
     // Resize a video, when it's loaded
     .one('canplaythrough.' + PLUGIN_NAME, function() {
       vide.resize();
-      $wrapper.css('background-image', 'url(' + poster + '.' + "jpg" + ')');
     })
 
     // Make it visible, when it's already playing
     .one('playing.' + PLUGIN_NAME, function() {
-      $video.css({
-        visibility: 'visible',
-        opacity: 1
-      });
-      $wrapper.css('background-image', 'none');
-      // $wrapper.css('background-image', 'url(' + poster + '.' + "jpg" + ')');
+      //Does not display video after poster image modified
+      if (!splashSwapped){
+        $video.css({
+          visibility: 'visible',
+          opacity: 1
+        });
+        $wrapper.css('background-image', 'none');
+      }
     });
 
     // Resize event is available only for 'window'

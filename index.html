@@ -21,7 +21,7 @@
     <!--Bootstrap JS-->
     <script src="dist/bootstrap/js/bootstrap.min.js"></script>
     <!--Vide: Background Video plugin-->
-    <script src="dist/jquery/jquery.vide.min.js"></script>
+    <script src="dist/jquery/jquery.vide.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-main">
@@ -60,7 +60,7 @@
 
     <!--HEADER SECTION-->
     <section class="main-section" id="main" >
-        <div class="blue-header container-fluid" data-vide-bg="images/bg/CodingSnip" data-vide-options="posterType: png, loop: false, muted: true, position: 0% 0%" >
+        <div class="blue-header container-fluid" data-vide-bg="images/bg/CodingSnip" data-vide-options="posterType: png, loop: true, muted: true, position: 0% 0%, splashPNG: true" >
             <div class="row text-center" >
                 <div class="title-text">
                     <h1 class="col-xs-12">Dylan Scelza</h1>
@@ -72,6 +72,11 @@
                     <button class="btn btn-info btn-lg" type="button" id="header-scroll-btn" aria-label="Left Align" onclick="chevron_btn_click();">
                         <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                     </button>
+                </div>
+                <div class="row hidden" id="vid-control-div" style="position: absolute; bottom: -94%; right: 0; color: white; opacity: 0.8">
+                    <i class="col-xs-10" aria-hidden="true"></i>
+                    <i class="fa fa-pause-circle-o col-xs-2" aria-hidden="true" id="vid-pause"></i>
+                    <i class="fa fa-play-circle-o col-xs-2 hidden" aria-hidden="true" id="vid-play"></i>
                 </div>
             </div>
         </div>

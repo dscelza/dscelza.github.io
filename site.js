@@ -63,6 +63,28 @@
             $("#navbar-main").fadeOut();
         }
         });
+
+        // Add video controls if the video is loaded. 200ms delay to account for vide args
+        setTimeout(function(){
+            var instance = $('.blue-header').data('vide');
+            if (instance.getVideoObject().currentTime > 0){
+                $("#vid-control-div").removeClass("hidden");
+                $("#vid-pause")[0].addEventListener('click', function() { 
+                    instance.getVideoObject().pause(); 
+                    $("#vid-play").removeClass("hidden");
+                    $("#vid-pause").addClass("hidden");
+                }, false);
+                $("#vid-play")[0].addEventListener('click', function() { 
+                    instance.getVideoObject().play(); 
+                    $("#vid-pause").removeClass("hidden");
+                    $("#vid-play").addClass("hidden");
+                }, false);
+            }
+
+        }, 200)
+
+        // var instance = $('.blue-header').data('vide');
+        // console.log(instance.getVideoObject().play());
         // Add Play/Pause for video. (Present in browser that autoplay vid)
     });
 
